@@ -4,10 +4,20 @@ import numpy as np
 # update/add code below ...
 
 def ways(n):
-    return None
+    final = []
+    count = (n/5)+1
+    i = 1
 
-def lowest_score(names, scores):
-    return None
+    while i<=count:
+        remainder = n%i
+        final.append(remainder, i)
+    
+    return final
 
-def sort_names(names, scores):
-    return None
+ways(12)
+
+# def lowest_score(names, scores):
+#     return None
+
+# def sort_names(names, scores):
+#     return None
