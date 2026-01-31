@@ -5,13 +5,13 @@ import numpy as np
 
 def ways(n):
     final = []
-    count = (n/5)+1
+    count = (n//5)+1
     i = 1
 
     while i<=count:
         remainder = n%i
-        final.append(remainder, i)
-    
+        final.append((remainder, i))
+        i+=1
     return final
 
 ways(12)
