@@ -31,17 +31,17 @@ scores = np.array([99, 71, 85, 62, 91])
 #Part - 1
 
 def lowest_score(names, scores):
-"""
-Return the name of the student with the lowest test score.
-"""
+
+#Return the name of the student with the lowest test score.
+
     return names[np.argmin(scores)]
 
 Part - 2
 
 def sort_names(names, scores):
-"""
-Return names sorted in descending order of test score.
-"""
+
+#Return names sorted in descending order of test score.
+
     return names[np.argsort(scores)[::-1]]
 
 #test output
